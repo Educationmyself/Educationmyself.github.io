@@ -1,8 +1,9 @@
-    @charset "utf-8";
+   @charset "utf-8";
     *{
         margin: 0;
         padding: 0;
         outline: none;
+		font-family: 'Play', sans-serif;
     }
 
     html {height: 100%}
@@ -13,7 +14,7 @@
         color: #333;
         background: #f7f7f7;
         font-size: 1em;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Play', sans-serif;
         line-height: 135%;
     }
 
@@ -22,10 +23,10 @@
         color: #f48b8b;
         text-decoration: none;
         transition: all.6 ease;
-        -webkit-transition: all.6sec ease;
+       /*webkit-transition: all.6sec ease;
         -moz-transition: all.6sec ease;
         -o-transition: all.6sec ease;
-        -ms-transition: all.6sec ease;
+        -ms-transition: all.6sec ease;*/
     }
 
     a:hover {
@@ -33,10 +34,10 @@
          color: #131314;
          text-decoration: none;
          transition: all.6 ease;
-         -webkit-transition: all.6sec ease;
+        /*webkit-transition: all.6sec ease;
          -moz-transition: all.6sec ease;
          -o-transition: all.6sec ease;
-         -ms-transition: all.6sec ease;
+         -ms-transition: all.6sec ease;*/
      }
 
      a:active{color: #8ce4a6}
@@ -126,18 +127,18 @@
     /* Основные стили для сайта */
 
     #wrapper {
-        float: left;
+      	float: left;
         width: 100%;
         margin-top: 20px;
     }
 
-    #wrapper #articles {
+    #wrapper #article {
         float: left;
         width: 80%;
         margin-left: 10%;
     }
 
-    #wrapper #articles article {
+    #wrapper #articles	article {
     float: left;
     border: 1px solid silver;
     box-sizing: border-box;
@@ -332,4 +333,5 @@
     #page-wrap {
         min-height: 94%;
         margin-bottom: -10px;
+		align-content: center;
     }
