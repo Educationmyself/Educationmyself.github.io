@@ -59,7 +59,12 @@ body {
 	display: none;
 }
 #wrapper div {
-	margin: 20px;
+	width: 750px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .UserButton {
 	margin-right: 43%;
