@@ -11,26 +11,26 @@
 }
 body {
 	background-image: url(../img/lghtmesh.png);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Play', sans-serif;
 	font-size: 14px;
 	color: #333;
 }
 #wrapper h1 {
 	text-align: center;
 	color: #06F;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Play', sans-serif;
 	font-size: 36px;
 }
 #wrapper h2 {
 	text-align: center;
 	color: #003;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Play', sans-serif;
 	font-size: 24px;
 }
 #wrapper h3 {
 	text-align: center;
 	color: #006;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Play', sans-serif;
 	font-size: 18px;
 }
 #wrapper p {
@@ -39,7 +39,7 @@ body {
 	margin: auto;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Play', sans-serif;
 	font-size: 16px;
 }
 #wrapper p img {
