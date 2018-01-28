@@ -1,0 +1,83 @@
+#wrapper {
+	background-color: #FFF;
+	height: auto;
+	width: 750px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 25px;
+	margin-left: auto;
+	border: 1px solid #CCC;
+	text-align: justify;
+}
+body {
+	background-image: url(../img/lghtmesh.png);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+#wrapper h1 {
+	text-align: center;
+	color: #06F;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+}
+#wrapper h2 {
+	text-align: center;
+	color: #003;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+#wrapper h3 {
+	text-align: center;
+	color: #006;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+#wrapper p {
+	padding-right: 40px;
+	padding-left: 40px;
+	margin: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+#wrapper p img {
+	padding-top: 10px;
+	padding-right: 10%;
+	padding-bottom: 10px;
+	padding-left: 10%;
+	height: 70%;
+	width: 80%;
+}
+.OpenTitle {
+	border: 1px solid #CCC;
+	width: 700px;
+	margin: 20px;
+}
+.hide {
+	display: none;
+}
+#wrapper div {
+	width: 750px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+.UserButton {
+	margin-right: 43%;
+	margin-left: 43%;
+	margin-bottom: 20px;
+	border-radius:10px;
+	height: auto;
+	width: 150px;
+	background-color: #3FF;
+}
+.header {
+	background-image: url(../img/subPageHeaderBG.jpg);
+	position: static;
+	width: 700px;
+	height: 50px;
+}
