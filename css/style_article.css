@@ -29,6 +29,30 @@
 	border: 1px solid #CCC;
 	text-align: justify;
 }	
+@media (max-width: 900px) and (min-width: 720px) {
+    #wrapper {
+    width: 25%;
+    margin-right: 2%;
+    }}
+
+    @media (min-width: 900px) {
+    #wrapper {
+    width: 31.33333%;
+    margin-right: 2%;
+    }}
+
+    @media (max-width: 899px) and (min-width: 700px) {
+        #wrapper {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10px;
+        }}
+
+    @media (max-width: 699px) {
+    #wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+    }}
 #wrapper h1 {
 	text-align: center;
 	color: #06F;
