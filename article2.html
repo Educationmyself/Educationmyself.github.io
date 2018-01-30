@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="ru">
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="keywords" content="test, site, website" />
-        <meta http-equiv="Content-Type" content="text/html" />
+        <meta charset="UTF-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="description" content="Этот сайт является пробным сайтом" />
         <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
         <link href="css/style_article.css" rel="stylesheet" type="text/css" />
@@ -56,7 +57,7 @@ $(document).ready(function(e){
                   <div>
     <h1>Программисты .Net поделились 10 </h1>
     <h1>скрытыми функциями языка C#</h1>
-<p><img src="img/zwalls.ru-6076.jpg" width="599" height="270"></p>
+<p><img src="img/Package_csharp.jpg" width="599" height="270"></p>
     <p>	Многие из студентов ПГУТИ знают основы языка C#. Но лишь немногим известны скрытые возможности, о которых вы узнаете в данной статье.</p>
     <p>К основам относятся объявления, условия, циклы, операторы и прочее. Часть людей, пишуших код на C# даже добилась определенных успехов в познании анонимных типов, lambda-выражений, методов баз данных в библеотеке LINQ и универсальных шаблонов. Однако лишь немногие из них знают о скрытых возможностях языка, поэтому в этой статье эксперты C# поделились своими "секретами".</p>
   </div>
@@ -167,7 +168,7 @@ $(document).ready(function(e){
    	  <li>Анонимные типы и инициализаторы:</li>
       </ol>
      <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="9" id="source code" dir="ltr">1	
+  <textarea name="source code" cols="85" rows="9" id="source code" dir="ltr">1	
 2	var colours = new Dictionary {
 3		    { "red", "#ff0000" },
 4		    { "green", "#00ff00" },
@@ -181,7 +182,7 @@ $(document).ready(function(e){
    	  <li>Автоматические свойства могут иметь различные области действия:</li>
       </ol>
       <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="3" id="source code" dir="ltr">1	
+  <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
 2	public int MyId { get; private set; }
 3	
   </textarea></p>
@@ -189,7 +190,7 @@ $(document).ready(function(e){
    	  <li>Псевдоним пространства имен:</li>
       </ol>
       <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="7" id="source code" dir="ltr">1	 
+  <textarea name="source code" cols="85" rows="7" id="source code" dir="ltr">1	 
 2	using web = System.Web.UI.WebControls;
 3	using win = System.Windows.Forms;
 4	 
@@ -200,13 +201,13 @@ $(document).ready(function(e){
      <h3>9. Ключевое слово «as»</h3>
     <p>Использование ключевого слова «as» приводит этот код</p>
     <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="3" id="source code" dir="ltr">1	
+  <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
 2	MyClass myObject = (MyClass) obj;
 3	 	 
   </textarea></p>
      <p>к следующему виду:</p>
      <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="3" id="source code" dir="ltr">1	
+  <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
 2	MyClass myObject = obj as MyClass;
 3	 	 
   </textarea></p>
@@ -214,7 +215,7 @@ $(document).ready(function(e){
      <h3>10. Автоматические свойства</h3>
      <p>Автоматические свойства, которые превращают это:</p>
      <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="15" id="source code" dir="ltr">1	 
+  <textarea name="source code" cols="85" rows="15" id="source code" dir="ltr">1	 
 2	
 3	private string _name;
 4	public string Name
@@ -232,13 +233,13 @@ $(document).ready(function(e){
   </textarea></p>
      <p>в это:</p>
      <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="3" id="source code" dir="ltr">1	
+  <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
 2	public string Name { get; set;}
 3	 	 
   </textarea></p>
      <p>Также инициализаторы объектов</p>
      <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="5" id="source code" dir="ltr">1	 
+  <textarea name="source code" cols="85" rows="5" id="source code" dir="ltr">1	 
 2	Employee emp = new Employee();
 3	emp.Name = "John Smith";
 4	emp.StartDate = DateTime.Now();
@@ -246,7 +247,7 @@ $(document).ready(function(e){
   </textarea></p>
      <p>становятся:</p>
      <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="3" id="source code" dir="ltr">1	
+  <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr"></textarea>1	
 2	Employee emp = new Employee {Name="John Smith", StartDate=DateTime.Now()}
 3	 	 
   </textarea></p>
