@@ -27,237 +27,237 @@ $(document).ready(function(e){
     </head>
     <body>
     
-            <div id="page-wrap">
-                <header>
-                    <a href="index.html" title="На главную" id="logo" >Educationmyself.github.io</a>
-                    <span class="contact">
-                        <a href="about.html" title="Информация о нас">О нас</a>
-                    </span>
-                    <input type="text" class="field" placeholder="Давай помогу найти" />
-                    <span class="right">
-                            <span class="contact">
-                                    <a href="reg.html" title="Зарегистрироваться">Регистрация</a>
-                                </span>
-                                <span class="contact">
-                                        <a href="auth.html" title="Войти">Вход</a>
-                                    </span>
-                    </span>
-                </header>
-                <div class="clear"><br /></div>
-                <center>
-                    <div id="menu">Разделы<hr /></div>
-                        <div id="menuHrefs">
-                            <a href="about.html">О нас</a>
-                            <a href="feedback.html">Обратная связь</a>
-                            <a href="auth.html">Вход</a>
-                            <a href="reg.html">Регистрация</a>
-                        </div>
-                </center>
-                <div id="wrapper">
-                  <div>
-    <h1>Программисты .Net поделились 10 </h1>
-    <h1>скрытыми функциями языка C#</h1>
-<p><img src="img/Package_csharp.jpg" width="599" height="270"></p>
-    <p>	Многие из студентов ПГУТИ знают основы языка C#. Но лишь немногим известны скрытые возможности, о которых вы узнаете в данной статье.</p>
-    <p>К основам относятся объявления, условия, циклы, операторы и прочее. Часть людей, пишуших код на C# даже добилась определенных успехов в познании анонимных типов, lambda-выражений, методов баз данных в библеотеке LINQ и универсальных шаблонов. Однако лишь немногие из них знают о скрытых возможностях языка, поэтому в этой статье эксперты C# поделились своими "секретами".</p>
-  </div>
-    <input name="UserButton" type="submit" class="UserButton" id="UserButton" value="Читать далее..."><div class="hide">
-    <h2 class="hide">Скрытые функции языка C#</h2>
-    <p></p>
-    <h3>1. Класс Path</h3>
-    <p>Этот совет не имеет прямого отношения к C#, но он будет полезен любому создает программный код. К большому сожалению, лишь некоторые специалисты пользуются System.IO.Path.Combine(). Многие просто не знают и не понимают, как это может облегчить разработку. В действительности, весь класс Path обладает большим потенциалом и возможностями, о которых стоит помнить! В любом создаваемом приложении вы обязательно увидите строку, приведенную ниже, несмотря на то, что такого быть не должно:</p>
-    <p>&nbsp;
-    <textarea name="source code" cols="85" rows="1" id="sourc" dir="ltr">1	string   path = dir + "\\" + fileName;</textarea>
-    </p>
-    <h3>2. Лямбда-выражения</h3>
-  <p>Лямбда-выражения и типовой вывод в языке недооценены. Лямбда могут иметь множество выражений. К тому же они имеют свойство автоматического удваивания так же, как и совместимые объекты делегата (стоит просто посмотреть на сигнатуру). Пример:</p>
-  <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="6" id="source code" dir="ltr">1	Console.CancelKeyPress +=
-2	(sender, e) => {
-3	Console.WriteLine("CTRL+C detected!\n");
-4	e.Cancel = true;
-5	};
-  </textarea></p>
-  <p>Следует обратить внимание на то, что в данном фрагменте кода нет new CancellationEventHandler, и поэтому необходимости указывать типы "sender" и "e" тоже нет, так как они возвращаются событием. Именно по этой причине такое решение более предпочтительно при написании всего делегата, который, помимо всего прочего, требует указания типов параметров.
-Лямбда-выражения не должны ничего возвращать, и в данном коде вывод типов становится максимально эффективным.
-И тем не менее стоит помнить, что всегда можно вернуть лямбда-выражение в методе функционального программирования. Например, вот лямбда, создающая лямбду, обрабатывающую событие Button.Click: </p>
-<p>&nbsp;
-  <textarea name="source code2" cols="85" rows="11" id="source code" dir="ltr">1	Func makeHandler =
-2	(dx, dy) => (sender, e) => {
-3	var btn = (Button) sender;
-4	btn.Top += dy;
-5	btn.Left += dx;
-6	};
-7	btnUp.Click += makeHandler(0, -1);
-8	btnDown.Click += makeHandler(0, 1);
-9	btnLeft.Click += makeHandler(-1, 0);
-10	btnRight.Click += makeHandler(1, 0);
-  </textarea></p>
-    <h3>3. Оператор ??</h3>
-<p>Вы можете связать оператор "??" так, что получится куча нулевых сравнений.</p>
-<p>&nbsp;
-<textarea name="source code" cols="85" rows="1" id="sourc" dir="ltr">1	string result = value1 ?? value2 ?? value3 ?? String.Empty;</textarea>
-</p>  
-    <h3>4. Aliased generics</h3>
-<p>&nbsp;
-<textarea name="source code" cols="85" rows="1" id="sourc" dir="ltr">1	using ASimpleName = Dictionary<string, Dictionary<string, List>>;</textarea>
-</p> 
-<p>Благодаря данной строчки кода вы можете использовать <em>ASimpleName</em>, вместо <em>Dictionary"string, Dictionary"string, List""</em>.
-Применяйте этот метод, когда нужны одинаковые длинные и сложные обобщения во многих местах.</p>
-    <h3>5. Нормализация строк</h3>
-    <p>Во время нормализации <em>string</em> настоятельно рекомендуется применять метод <em>ToUpperInvariant</em>, а не метод<em> ToLowerInvariant</em>, так как в Microsoft провели оптимизацию кода для того чтобы выполнять сравнения в верхнем регистре.</p>
-<h3>6. Оператор коалесценции</h3>
-    <p>Оператор нулевой коалесценции и скобки для автоматической инициализации коллекций.</p>
-    <p>&nbsp;
-<textarea name="source code" cols="85" rows="6" id="sourc" dir="ltr">1		 
-2	private IList _foo;
-3	 
-4	public IList ListOfFoo 
-5    		{ get { return _foo ?? (_foo = new List()); } }
-6	
- </textarea>
-</p>
-    <h3>7. Избегайте проверки на нулевые обработчики событий</h3>
-    <p>Когда вы добавляете пустой делегат события во время объявления метода, то избавляете себя от нужды все время проверять событие на <em>null</em> перед тем как его вызвать. Пример:</p>
-    <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="4" id="source code" dir="ltr">1	 
-2	public delegate void MyClickHandler(object sender, string myValue);
-3	public event MyClickHandler Click = delegate {}; // добавляем пустой delegate!
-4	 
-  </textarea></p>
-    <p>Позволяет делать вам так:</p>
-    <p>&nbsp;
-<textarea name="source code" cols="85" rows="6" id="sourc" dir="ltr">1	 
-2	public void DoSomething()
-3	{
-4		    Click(this, "foo");
-5	}
-6	 
- </textarea>
-</p>
-    <p>А не так:</p>
-    <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="11" id="source code" dir="ltr">1	
-2	public void DoSomething()
-3	{
-4		    // Unnecessary!
-5	    MyClickHandler click = Click;
-6	    if (click != null) // Unnecessary! 
-7	    {
-8		        click(this, "foo");
-9	    }
-10	}
-11	
-  </textarea></p>
-    <h3>8. Неявные обобщения</h3>
-   <ol start="1">
-   	  <li>Неявные обобщения (не только для методов, но и для классов):</li>
-      </ol>
-     <p>&nbsp;
-  <textarea name="source code2" cols="85" rows="3" id="source code" dir="ltr">1	void GenericMethod<T>( T input ) { ... } //Возвращаемый тип, поэтому GenericMethod
-2	GenericMethod<int>(23); //Вам не нужны
-3	GenericMethod(23); //Достаточно этого	 
-  </textarea></p>
-     <ol start="2">
-   	  <li>Простые лямбда-выражения с одним параметром:</li>
-      </ol>
-     <p>&nbsp;
-<textarea name="source code" cols="85" rows="1" id="sourc" dir="ltr">1	x => x.ToString() //упрощает множественный вызов</textarea>
-	</p>
-    <ol start="3">
-   	  <li>Анонимные типы и инициализаторы:</li>
-      </ol>
-     <p>&nbsp;
-  <textarea name="source code" cols="85" rows="9" id="source code" dir="ltr">1	
-2	var colours = new Dictionary {
-3		    { "red", "#ff0000" },
-4		    { "green", "#00ff00" },
-5		    { "blue", "#0000ff" }
-6	};
-7	 
-8	int[] arrayOfInt = { 1, 2, 3, 4, 5 };
-9	 
-  </textarea></p>
-  <ol start="4">
-   	  <li>Автоматические свойства могут иметь различные области действия:</li>
-      </ol>
-      <p>&nbsp;
-  <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
-2	public int MyId { get; private set; }
-3	
-  </textarea></p>
-  <ol start="5">
-   	  <li>Псевдоним пространства имен:</li>
-      </ol>
-      <p>&nbsp;
-  <textarea name="source code" cols="85" rows="7" id="source code" dir="ltr">1	 
-2	using web = System.Web.UI.WebControls;
-3	using win = System.Windows.Forms;
-4	 
-5	web::Control aWebControl = new web::Control();
-6	win::Control aFormControl = new win::Control();
-7	 	 
-  </textarea></p>
-     <h3>9. Ключевое слово «as»</h3>
-    <p>Использование ключевого слова «as» приводит этот код</p>
-    <p>&nbsp;
-  <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
-2	MyClass myObject = (MyClass) obj;
-3	 	 
-  </textarea></p>
-     <p>к следующему виду:</p>
-     <p>&nbsp;
-  <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
-2	MyClass myObject = obj as MyClass;
-3	 	 
-  </textarea></p>
-     <p>Во втором случае возвращаемое значение будет null, если obj — это не MyClass, а не бросит исключение класса.</p>
-     <h3>10. Автоматические свойства</h3>
-     <p>Автоматические свойства, которые превращают это:</p>
-     <p>&nbsp;
-  <textarea name="source code" cols="85" rows="15" id="source code" dir="ltr">1	 
-2	
-3	private string _name;
-4	public string Name
-5	{
-6		get
-7		{
-8			return _name;
-9		}
-10		set
-11		{
-12			_name = value;
-13		}
-14	}
-15	 
-  </textarea></p>
-     <p>в это:</p>
-     <p>&nbsp;
-  <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
-2	public string Name { get; set;}
-3	 	 
-  </textarea></p>
-     <p>Также инициализаторы объектов</p>
-     <p>&nbsp;
-  <textarea name="source code" cols="85" rows="5" id="source code" dir="ltr">1	 
-2	Employee emp = new Employee();
-3	emp.Name = "John Smith";
-4	emp.StartDate = DateTime.Now();
-5	 
-  </textarea></p>
-     <p>становятся:</p>
-     <p>&nbsp;
-  <textarea name="source code" cols="85" rows="4" id="source code" dir="ltr">1	
-2	Employee emp = new Employee {Name="John Smith", StartDate=DateTime.Now()}
-3	 	 
-  </textarea></p>
-    <p>  <a href="https://stackoverflow.com/questions/9033/hidden-features-of-c">Источник</a></p>
-  </div></p>
-    </div>
-            <footer>
-                <span class="left">
-                    Все права защищены &copy; 2017
-                </span><span class="right"><img src="img/VK.png" alt="Группа Вконтакте" title="Группа Вконтакте" /><div>Соц.кнопки</div></span>
-            </footer>
+      <div id="page-wrap">
+        <header>
+          <a href="index.html" title="На главную" id="logo" >Educationmyself.github.io</a>
+          <span class="contact">
+            <a href="about.html" title="Информация о нас">О нас</a>
+          </span>
+          <input type="text" class="field" placeholder="Давай помогу найти" />
+          <span class="right">
+            <span class="contact">
+              <a href="reg.html" title="Зарегистрироваться">Регистрация</a>
+            </span>
+            <span class="contact">
+            <a href="auth.html" title="Войти">Вход</a>
+            </span>
+          </span>
+        </header>
+        <div class="clear"><br /></div>
+        <center>
+          <div id="menu">Разделы<hr /></div>
+            <div id="menuHrefs">
+              <a href="about.html">О нас</a>
+              <a href="feedback.html">Обратная связь</a>
+              <a href="auth.html">Вход</a>
+              <a href="reg.html">Регистрация</a>
+            </div>
+        </center>
+        <div id="wrapper">
+          <div>
+            <h1>Программисты .Net поделились 10 </h1>
+            <h1>скрытыми функциями языка C#</h1>
+            <p><img src="img/Package_csharp.jpg" width="599" height="270"></p>
+            <p>	Многие из студентов ПГУТИ знают основы языка C#. Но лишь немногим известны скрытые возможности, о которых вы узнаете в данной статье.</p>
+            <p>К основам относятся объявления, условия, циклы, операторы и прочее. Часть людей, пишуших код на C# даже добилась определенных успехов в познании анонимных типов, lambda-выражений, методов баз данных в библеотеке LINQ и универсальных шаблонов. Однако лишь немногие из них знают о скрытых возможностях языка, поэтому в этой статье эксперты C# поделились своими "секретами".</p>
+          </div>
+              <input name="UserButton" type="submit" class="UserButton" id="UserButton" value="Читать далее..."><div class="hide">
+              <h2 class="hide">Скрытые функции языка C#</h2>
+              <p></p>
+              <h3>1. Класс Path</h3>
+              <p>Этот совет не имеет прямого отношения к C#, но он будет полезен любому создает программный код. К большому сожалению, лишь некоторые специалисты пользуются System.IO.Path.Combine(). Многие просто не знают и не понимают, как это может облегчить разработку. В действительности, весь класс Path обладает большим потенциалом и возможностями, о которых стоит помнить! В любом создаваемом приложении вы обязательно увидите строку, приведенную ниже, несмотря на то, что такого быть не должно:</p>
+              <p>&nbsp;
+              <textarea name="source code" cols="85" rows="1" id="sourc" dir="ltr">1	string   path = dir + "\\" + fileName;</textarea>
+              </p>
+              <h3>2. Лямбда-выражения</h3>
+            <p>Лямбда-выражения и типовой вывод в языке недооценены. Лямбда могут иметь множество выражений. К тому же они имеют свойство автоматического удваивания так же, как и совместимые объекты делегата (стоит просто посмотреть на сигнатуру). Пример:</p>
+            <p>&nbsp;
+            <textarea name="source code2" cols="85" rows="6" id="source code" dir="ltr">1	Console.CancelKeyPress +=
+          2	(sender, e) => {
+          3	Console.WriteLine("CTRL+C detected!\n");
+          4	e.Cancel = true;
+          5	};
+            </textarea></p>
+            <p>Следует обратить внимание на то, что в данном фрагменте кода нет new CancellationEventHandler, и поэтому необходимости указывать типы "sender" и "e" тоже нет, так как они возвращаются событием. Именно по этой причине такое решение более предпочтительно при написании всего делегата, который, помимо всего прочего, требует указания типов параметров.
+          Лямбда-выражения не должны ничего возвращать, и в данном коде вывод типов становится максимально эффективным.
+          И тем не менее стоит помнить, что всегда можно вернуть лямбда-выражение в методе функционального программирования. Например, вот лямбда, создающая лямбду, обрабатывающую событие Button.Click: </p>
+          <p>&nbsp;
+            <textarea name="source code2" cols="85" rows="11" id="source code" dir="ltr">1	Func makeHandler =
+          2	(dx, dy) => (sender, e) => {
+          3	var btn = (Button) sender;
+          4	btn.Top += dy;
+          5	btn.Left += dx;
+          6	};
+          7	btnUp.Click += makeHandler(0, -1);
+          8	btnDown.Click += makeHandler(0, 1);
+          9	btnLeft.Click += makeHandler(-1, 0);
+          10	btnRight.Click += makeHandler(1, 0);
+            </textarea></p>
+              <h3>3. Оператор ??</h3>
+          <p>Вы можете связать оператор "??" так, что получится куча нулевых сравнений.</p>
+          <p>&nbsp;
+          <textarea name="source code" cols="85" rows="1" id="sourc" dir="ltr">1	string result = value1 ?? value2 ?? value3 ?? String.Empty;</textarea>
+          </p>  
+              <h3>4. Aliased generics</h3>
+          <p>&nbsp;
+          <textarea name="source code" cols="85" rows="1" id="sourc" dir="ltr">1	using ASimpleName = Dictionary<string, Dictionary<string, List>>;</textarea>
+          </p> 
+          <p>Благодаря данной строчки кода вы можете использовать <em>ASimpleName</em>, вместо <em>Dictionary"string, Dictionary"string, List""</em>.
+          Применяйте этот метод, когда нужны одинаковые длинные и сложные обобщения во многих местах.</p>
+              <h3>5. Нормализация строк</h3>
+              <p>Во время нормализации <em>string</em> настоятельно рекомендуется применять метод <em>ToUpperInvariant</em>, а не метод<em> ToLowerInvariant</em>, так как в Microsoft провели оптимизацию кода для того чтобы выполнять сравнения в верхнем регистре.</p>
+          <h3>6. Оператор коалесценции</h3>
+              <p>Оператор нулевой коалесценции и скобки для автоматической инициализации коллекций.</p>
+              <p>&nbsp;
+          <textarea name="source code" cols="85" rows="6" id="sourc" dir="ltr">1		 
+          2	private IList _foo;
+          3	 
+          4	public IList ListOfFoo 
+          5    		{ get { return _foo ?? (_foo = new List()); } }
+          6	
+          </textarea>
+          </p>
+              <h3>7. Избегайте проверки на нулевые обработчики событий</h3>
+              <p>Когда вы добавляете пустой делегат события во время объявления метода, то избавляете себя от нужды все время проверять событие на <em>null</em> перед тем как его вызвать. Пример:</p>
+              <p>&nbsp;
+            <textarea name="source code2" cols="85" rows="4" id="source code" dir="ltr">1	 
+          2	public delegate void MyClickHandler(object sender, string myValue);
+          3	public event MyClickHandler Click = delegate {}; // добавляем пустой delegate!
+          4	 
+            </textarea></p>
+              <p>Позволяет делать вам так:</p>
+              <p>&nbsp;
+          <textarea name="source code" cols="85" rows="6" id="sourc" dir="ltr">1	 
+          2	public void DoSomething()
+          3	{
+          4		    Click(this, "foo");
+          5	}
+          6	 
+          </textarea>
+          </p>
+              <p>А не так:</p>
+              <p>&nbsp;
+            <textarea name="source code2" cols="85" rows="11" id="source code" dir="ltr">1	
+          2	public void DoSomething()
+          3	{
+          4		    // Unnecessary!
+          5	    MyClickHandler click = Click;
+          6	    if (click != null) // Unnecessary! 
+          7	    {
+          8		        click(this, "foo");
+          9	    }
+          10	}
+          11	
+            </textarea></p>
+              <h3>8. Неявные обобщения</h3>
+            <ol start="1">
+                <li>Неявные обобщения (не только для методов, но и для классов):</li>
+                </ol>
+              <p>&nbsp;
+            <textarea name="source code2" cols="85" rows="3" id="source code" dir="ltr">1	void GenericMethod<T>( T input ) { ... } //Возвращаемый тип, поэтому GenericMethod
+          2	GenericMethod<int>(23); //Вам не нужны
+          3	GenericMethod(23); //Достаточно этого	 
+            </textarea></p>
+              <ol start="2">
+                <li>Простые лямбда-выражения с одним параметром:</li>
+                </ol>
+              <p>&nbsp;
+          <textarea name="source code" cols="85" rows="1" id="sourc" dir="ltr">1	x => x.ToString() //упрощает множественный вызов</textarea>
+            </p>
+              <ol start="3">
+                <li>Анонимные типы и инициализаторы:</li>
+                </ol>
+              <p>&nbsp;
+            <textarea name="source code" cols="85" rows="9" id="source code" dir="ltr">1	
+          2	var colours = new Dictionary {
+          3		    { "red", "#ff0000" },
+          4		    { "green", "#00ff00" },
+          5		    { "blue", "#0000ff" }
+          6	};
+          7	 
+          8	int[] arrayOfInt = { 1, 2, 3, 4, 5 };
+          9	 
+            </textarea></p>
+            <ol start="4">
+                <li>Автоматические свойства могут иметь различные области действия:</li>
+                </ol>
+                <p>&nbsp;
+            <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
+          2	public int MyId { get; private set; }
+          3	
+            </textarea></p>
+            <ol start="5">
+                <li>Псевдоним пространства имен:</li>
+                </ol>
+                <p>&nbsp;
+            <textarea name="source code" cols="85" rows="7" id="source code" dir="ltr">1	 
+          2	using web = System.Web.UI.WebControls;
+          3	using win = System.Windows.Forms;
+          4	 
+          5	web::Control aWebControl = new web::Control();
+          6	win::Control aFormControl = new win::Control();
+          7	 	 
+            </textarea></p>
+              <h3>9. Ключевое слово «as»</h3>
+              <p>Использование ключевого слова «as» приводит этот код</p>
+              <p>&nbsp;
+            <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
+          2	MyClass myObject = (MyClass) obj;
+          3	 	 
+            </textarea></p>
+              <p>к следующему виду:</p>
+              <p>&nbsp;
+            <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
+          2	MyClass myObject = obj as MyClass;
+          3	 	 
+            </textarea></p>
+              <p>Во втором случае возвращаемое значение будет null, если obj — это не MyClass, а не бросит исключение класса.</p>
+              <h3>10. Автоматические свойства</h3>
+              <p>Автоматические свойства, которые превращают это:</p>
+              <p>&nbsp;
+            <textarea name="source code" cols="85" rows="15" id="source code" dir="ltr">1	 
+          2	
+          3	private string _name;
+          4	public string Name
+          5	{
+          6		get
+          7		{
+          8			return _name;
+          9		}
+          10		set
+          11		{
+          12			_name = value;
+          13		}
+          14	}
+          15	 
+            </textarea></p>
+              <p>в это:</p>
+              <p>&nbsp;
+            <textarea name="source code" cols="85" rows="3" id="source code" dir="ltr">1	
+          2	public string Name { get; set;}
+          3	 	 
+            </textarea></p>
+              <p>Также инициализаторы объектов</p>
+              <p>&nbsp;
+            <textarea name="source code" cols="85" rows="5" id="source code" dir="ltr">1	 
+          2	Employee emp = new Employee();
+          3	emp.Name = "John Smith";
+          4	emp.StartDate = DateTime.Now();
+          5	 
+            </textarea></p>
+              <p>становятся:</p>
+              <p>&nbsp;
+            <textarea name="source code" cols="85" rows="4" id="source code" dir="ltr">1	
+          2	Employee emp = new Employee {Name="John Smith", StartDate=DateTime.Now()}
+          3	 	 
+            </textarea></p>
+              <p>  <a href="https://stackoverflow.com/questions/9033/hidden-features-of-c">Источник</a></p>
+      </div>
+        </div></p>
+        <footer>
+          <span class="left">
+            Все права защищены &copy; 2017
+          </span><span class="right"><img src="img/VK.png" alt="Группа Вконтакте" title="Группа Вконтакте" /><div>Соц.кнопки</div></span>
+        </footer>
     </body>
 </html>
