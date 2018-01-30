@@ -38,45 +38,45 @@
 		text-align: center;
 		color: #06F;
 		font-family: 'Play', sans-serif;
-		font-size: 36px;
-		margin-bottom: 20px;
+		font-size: auto;
+		margin-bottom: auto;
 	}
 	#wrapper h2 {
 		text-align: center;
 		color: #003;
 		font-family: 'Play', sans-serif;
-		font-size: 24px;
+		font-size: auto;
 	}
 	#wrapper h3 {
 		text-align: center;
 		color: #006;
 		font-family: 'Play', sans-serif;
-		font-size: 18px;
+		font-size: auto;
 	}
 	#wrapper p {
-		padding-right: 40px;
-		padding-left: 40px;
+		padding-right: auto;
+		padding-left: auto;
 		margin: auto;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-top: auto;
+		padding-bottom: auto;
 		font-family: 'Play', sans-serif;
-		font-size: 16px;
+		font-size: auto;
 	}
 	#wrapper p img {
-		padding-top: 10px;
-		padding-right: 10%;
-		padding-bottom: 10px;
-		padding-left: 10%;
-		height: 70%;
-		width: 80%;
+		padding-top: auto;
+		padding-right: auto;
+		padding-bottom: auto;
+		padding-left: auto;
+		height: auto;
+		width: auto;
 	}
 	#wrapper div {
-		width: 750px;
+		width: auto;
 		position: relative;
 		margin-right: auto;
 		margin-left: auto;
-		margin-top: 20px;
-		margin-bottom: 20px; 
+		margin-top: auto;
+		margin-bottom: auto; 
 }}
 #wrapper h1 {
 	text-align: center;
