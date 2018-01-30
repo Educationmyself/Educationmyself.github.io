@@ -34,24 +34,13 @@
         width: 31.333333%;
         margin-bottom: 10px;
 	}
-	#wrapper h1 {
-		text-align: center;
-		color: #06F;
-		font-family: 'Play', sans-serif;
-		font-size: 11px;
-		margin-bottom: 10px;
+	#wrapper textarea{
+        width: 31.333333%;
+        margin-bottom: 10px;
 	}
-	#wrapper h2 {
-		text-align: center;
-		color: #003;
-		font-family: 'Play', sans-serif;
-		font-size: 10px;
-	}
-	#wrapper h3 {
-		text-align: center;
-		color: #006;
-		font-family: 'Play', sans-serif;
-		font-size: 9px;
+	#wrapper span{
+        width: 31.333333%;
+        margin-bottom: 10px;
 	}
 	#wrapper p {
 		padding-bottom: 31.333333%;
