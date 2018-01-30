@@ -38,44 +38,35 @@
 		text-align: center;
 		color: #06F;
 		font-family: 'Play', sans-serif;
-		font-size: 31.333333%;
-		margin-bottom: 31.333333%;
+		font-size: 11px;
+		margin-bottom: 10px;
 	}
 	#wrapper h2 {
 		text-align: center;
 		color: #003;
 		font-family: 'Play', sans-serif;
-		font-size: 31.333333%;
+		font-size: 10px;
 	}
 	#wrapper h3 {
 		text-align: center;
 		color: #006;
 		font-family: 'Play', sans-serif;
-		font-size: 31.333333%;
+		font-size: 9px;
 	}
 	#wrapper p {
-		padding-right: 31.333333%;
-		padding-left: 31.333333%;
-		margin: 31.333333%;
-		padding-top: 31.333333%;
 		padding-bottom: 31.333333%;
 		font-family: 'Play', sans-serif;
-		font-size: 31.333333%;
+		font-size: 9px;
 	}
 	#wrapper p img {
-		padding-top: 31.333333%;
-		padding-right: 31.333333%;
+		padding-top: 10px;
 		padding-bottom: 31.333333%;
-		padding-left: 31.333333%;
 		height: 31.333333%;
 		width: 31.333333%;
 	}
 	#wrapper div {
 		width: 31.333333%;
 		position: relative;
-		margin-right: 31.333333%;
-		margin-left: 31.333333%;
-		margin-top: 31.333333%;
 		margin-bottom: 31.333333%; 
 }}
 #wrapper h1 {
