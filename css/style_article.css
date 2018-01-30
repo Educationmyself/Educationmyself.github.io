@@ -5,6 +5,19 @@
         outline: none;
 		font-family: 'Play', sans-serif;
     }
+
+    html {height: 100%}
+
+    body {
+        width: 100%;
+        height: 100%;
+        color: #333;
+        background-image: url(../img/lghtmesh.png);
+		font-size: 14px;
+        font-family: 'Play', sans-serif;
+		line-height: 135%;
+	color: #333;
+}
 #wrapper {
 	background-color: #FFF;
 	height: auto;
@@ -15,13 +28,7 @@
 	margin-left: auto;
 	border: 1px solid #CCC;
 	text-align: justify;
-}
-body {
-	background-image: url(../img/lghtmesh.png);
-	font-family: 'Play', sans-serif;
-	font-size: 14px;
-	color: #333;
-}
+}	
 #wrapper h1 {
 	text-align: center;
 	color: #06F;
