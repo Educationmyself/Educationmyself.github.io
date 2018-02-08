@@ -34,7 +34,7 @@
          color: #131314;
          text-decoration: none;
          transition: all.6 ease;
-        webkit-transition: all.6sec ease;
+        -webkit-transition: all.6sec ease;
          -moz-transition: all.6sec ease;
          -o-transition: all.6sec ease;
          -ms-transition: all.6sec ease;
