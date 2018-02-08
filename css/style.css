@@ -43,9 +43,9 @@
      a:active{color: #8ce4a6}
 
      img {
-         max-width: 100%;
-         height: auto;
-         width: auto\9;
+	max-width: 100%;
+	height: auto;
+	width: auto;
      }
 
      hr {
@@ -235,13 +235,7 @@
     }
 
     /* Стили для формы */
-
-    form {
-        width: 60%;
-        margin-left: 20%;
-        float: left;
-    }
-
+	
     form label {
         float: left;
         width: 100%;
@@ -315,6 +309,11 @@
         float: center;
         margin-top: 15px;
     }
+    .UserButton {
+        border-radius: 10px;;
+        margin-bottom: 20px;
+        width: 5%;
+    }
 
 
 
@@ -343,3 +342,10 @@
         min-height: 94%;
         margin-bottom: -10px;
     }
+    .hide{
+        display:  none;
+    }
+#buttonReg button {
+	height: 34px;
+	width: auto;
+}

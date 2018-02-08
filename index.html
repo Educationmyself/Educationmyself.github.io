@@ -10,6 +10,14 @@
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+	$('#UserButton').click(function(){
+		$('.hide').fadeIn(1000);		
+		});
+});
+</script>
         <title>Education myself</title>
     <style type="text/css">
     .Center_content {
@@ -45,44 +53,50 @@
                     </div>
                 </center>
                 <div class="Center_content" id="wrapper">
-                    <div name="articles" id="articles">
-                        <article>
-                            <img src="img/linuxSec.jpg" alt="Изображение" title="Изображение" />
-                            <h2>11 советов по защите ПК, работающих на OS Linux/Unix</h2>
-                            <br />
-                            <p>Защита системы – важная составляющая работы.
-                                В статье 11 полезных советов, которые помогут 
-                                сделать вашу UNIX-систему более защищённой.
-                               
-                            </p><a href="article1.html" title="Посмотреть статью">Читать далее</a>
-                        </article>
-                        <article>
-                            <center><a href="article2.html" title="Посмотреть статью"></a>
-                                <img src="img/Package_csharp.jpg" alt="Изображение" width="195" height="163" title="Изображение" />
-                            </a></center>
-                            <h2>Программисты .Net поделились 10 скрытыми функциями языка C#</h2>
-                            <p>Многие из студентов ПГУТИ знают основы языка C#. Но лишь немногим известны скрытые возможности, о которых вы узнаете в данной статье...
-                            </p><a href="article2.html" title="Посмотреть статью">Читать далее</a>
-                        </article>
-                        <article>
-                            <img src="img/zwalls.ru-6076.jpg" alt="Изображение" title="Изображение" />
-                            <h2>Чистый код. Как его соблюдать?</h2>
-                            <p>Написание чистого кода это непростая задача. Для достижения этой цели необходимо изучать множество различных практик и просматривать множество различных советов.!
-                            </p><a href="article3.html" title="Посмотреть статью">Читать далее</a>
-                        </article>
+                    <div>
+                        <div name="articles" id="articles">
+                                <article>
+                                    <img src="img/linuxSec.jpg" alt="Изображение" title="Изображение" />
+                                    <h2>11 советов по защите ПК, работающих на OS Linux/Unix</h2>
+                                    <br />
+                                    <p>Защита системы – важная составляющая работы.
+                                        В статье 11 полезных советов, которые помогут 
+                                        сделать вашу UNIX-систему более защищённой.
+                                        
+                                    </p><a href="article1.html" title="Посмотреть статью">Читать далее</a>
+                                </article>
+                                <article>
+                                    <center><a href="article2.html" title="Посмотреть статью"></a>
+                                        <img src="img/Package_csharp.jpg" alt="Изображение" width="195" height="163" title="Изображение" />
+                                    </a></center>
+                                    <h2>Программисты .Net поделились 10 скрытыми функциями языка C#</h2>
+                                    <p>Многие из студентов ПГУТИ знают основы языка C#. Но лишь немногим известны скрытые возможности, о которых вы узнаете в данной статье...
+                                    </p><a href="article2.html" title="Посмотреть статью">Читать далее</a>
+                                </article>
+                                <article>
+                                    <img src="img/zwalls.ru-6076.jpg" alt="Изображение" title="Изображение" />
+                                    <h2>Чистый код. Как его соблюдать?</h2>
+                                    <p>Написание чистого кода это непростая задача. Для достижения этой цели необходимо изучать множество различных практик и просматривать множество различных советов.!
+                                    </p><a href="article3.html" title="Посмотреть статью">Читать далее</a>
+                                </article>
+                            </div>
+                            <div class="clear">
+                            <div class="clear" id="main_soc_block">
+                                <div class="clear" id="article">
+                                    <h3>Регестрируйтесь на нашем сайте</h3>
+                                    <p>Для прохождения тестирования</p>
+                                    <form action="reg.html" id="buttonReg">
+                                        <button>
+                                            <div><img src="img/button.png" style="border-radius:120px"/></div> 
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="clear"><br /></div>
                     </div>
-                    <div class="clear">
-                    <div class="clear" id="main_soc_block">
-                        
-                        <div class="clear" id="article">
-                            <h3>Регестрируйтесь на нашем сайте</h3>
-                            <p>Для прохождения тестирования</p>
-                            <a href="reg.html" title="Регистрируйтесь"><img src="img/button.png" /></a>
-                        </div>
-                    
-                    </div>
-                    </div>
-                    <div class="clear"><br /></div>
+                    <!--<input name="UserButton" type="submit" class="UserButton" id="UserButton" value="Читать далее..."><div class="hide">-->
+                    <p style="text-align: center"><input name="UserButton" type="submit" class="UserButton" id="UserButton" value="Далее..."></p><div class="hide">
                     <div id="articles">
                             <article>
                                 <img src="img/000524292.jpg" alt="Изображение" title="Изображение" />
@@ -137,7 +151,7 @@
                                     Здесь находится вступительный текст!!
                                 </p><a href="article9.html" title="Посмотреть статью">Читать далее</a>
                             </article>
-                        </div>
+                        </div></div>
                 </div>
         </div>
             <footer>

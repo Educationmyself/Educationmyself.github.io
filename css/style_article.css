@@ -111,13 +111,9 @@
 	margin-bottom: 20px; 
 }
 .UserButton {
-	margin-right: 43%;
-	margin-left: 43%;
+	border-radius: 1px;;
 	margin-bottom: 20px;
-	border-radius:10px;
-	height: auto;
 	width: 150px;
-	background-color: #3FF;
 }
 .header {
 	background-image: url(../img/subPageHeaderBG.jpg);
@@ -129,3 +125,12 @@
 	border: 1px solid #0CF;
 	background-color: #FFF;
 }
+UL { 
+	list-style-type: decimal; /* Маркеры в виде квадрата */
+	list-style-position: inside; /* Маркеры размещаются за пределами текстового блока */
+	color: #333333; /* Цвет текста списка */
+   }
+   div#ul{
+	   text-align: left;
+	   margin-left: 10%;
+   }
