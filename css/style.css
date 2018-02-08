@@ -23,10 +23,10 @@
         color: #f48b8b;
         text-decoration: none;
         transition: all.6 ease;
-       /*webkit-transition: all.6sec ease;
+       -webkit-transition: all.6sec ease;
         -moz-transition: all.6sec ease;
         -o-transition: all.6sec ease;
-        -ms-transition: all.6sec ease;*/
+        -ms-transition: all.6sec ease;
     }
 
     a:hover {
@@ -34,10 +34,10 @@
          color: #131314;
          text-decoration: none;
          transition: all.6 ease;
-        /*webkit-transition: all.6sec ease;
+        webkit-transition: all.6sec ease;
          -moz-transition: all.6sec ease;
          -o-transition: all.6sec ease;
-         -ms-transition: all.6sec ease;*/
+         -ms-transition: all.6sec ease;
      }
 
      a:active{color: #8ce4a6}
@@ -69,7 +69,7 @@
         width: 98%;
         background: url(../img/subPageHeaderBG.jpg) repeat-x center 0;
         float: left;
-        /*min-height: 50 px;*/
+        min-height: 50 px;/**/
     }
 
     header {
@@ -322,7 +322,7 @@
          width: 98%;
          background-color: #fff;
          float: left;
-         /*min-height: 50 px;*/
+         min-height: 50 px;/**/
         padding: 1%;
         border-top: 2px solid silver;
         margin-top: 10px;
