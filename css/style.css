@@ -80,13 +80,15 @@
     #logo {
         font-size: 2em;
         font-family: Comic Sans MS, sans-serif;
-        color: rgb(2, 29, 32);
+        color: #ccc;
+        width: 13.5em;
     }
 
     .contact {
         font-size: 1.5em;
         font-family: Comic Sans MS, sans-serif;
         margin-left: 20px;
+        float: left;
     }
 
     input[type=text].field {
@@ -94,6 +96,7 @@
         border: 2px solid silver;
         padding: 5px;
         margin-left: 20px;
+        float: right;
     }
 
     input[type=text].field:focus {border: 2px solid #f58b8b}

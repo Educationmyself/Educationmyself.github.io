@@ -1,0 +1,92 @@
+   @charset "utf-8";
+    *{
+        margin: 0;
+        padding: 0;
+        outline: none;
+		font-family: 'Play', sans-serif;
+    }
+
+    html {height: 100%}
+
+    body {
+        width: 100%;
+        height: 100%;
+        color: #333;
+        background: #f7f7f7;
+        font-size: 1em;
+        font-family: 'Play', sans-serif;
+        line-height: 135%;
+    }
+
+    a {
+       /* color: rgb(252, 129, 129);*/
+        color: #f48b8b;
+        text-decoration: none;
+        transition: all.6 ease;
+       -webkit-transition: all.6sec ease;
+        -moz-transition: all.6sec ease;
+        -o-transition: all.6sec ease;
+        -ms-transition: all.6sec ease;
+    }
+
+    a:hover {
+        /* color: rgb(252, 129, 129);*/
+         color: #131314;
+         text-decoration: none;
+         transition: all.6 ease;
+        -webkit-transition: all.6sec ease;
+         -moz-transition: all.6sec ease;
+         -o-transition: all.6sec ease;
+         -ms-transition: all.6sec ease;
+     }
+
+     a:active{color: #8ce4a6}
+
+     img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+     }
+
+     hr {
+          display: block;
+          border: 0;
+          height: 1px;
+          border-top: 1px solid #ccc;
+          padding: 0;
+     }
+
+     .left {float: left}
+     .right {float: right}
+     .clear {clear: both}
+
+     /* Selection Block */
+
+     ::selection {background: #f58b8b; color: #fff}
+     ::-moz-selection {background: #f58b8b; color: #fff}
+
+    header {
+        width: 98%;
+        background: url(../img/subPageHeaderBG.jpg) repeat-x center 0;
+        float: left;
+        min-height: 50 px;/**/
+    }
+
+    header {
+        border-bottom: 2px solid silver;
+        padding: 1%;
+    }
+
+    #logo {
+        font-size: 2em;
+        font-family: Comic Sans MS, sans-serif;
+        color: #cccccc;
+    }
+
+    /* Центральный блок нашего сайта */
+
+    
+    a img {
+        float: center;
+        margin-top: 15px;
+    }
