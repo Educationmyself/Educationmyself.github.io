@@ -1,357 +1,193 @@
 <!DOCTYPE html>
-<html lang="ru"> 
-    <head>
-        <meta charset="UTF-8"/>
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />-->
-        <meta name="keywords" content="test, site, website" />
-        <meta http-equiv="Content-Type" content="text/html" />
-        <meta name="description" content="Этот сайт является пробным сайтом" />
-        <link href="https://educationmyself.github.io/css/style_article.css" rel="stylesheet" type="text/css" />
-        <link href="https://educationmyself.github.io/css/style.css" rel="stylesheet" type="text/css" />
-        <link href="https://educationmyself.github.io/js/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
-        <link href="https://educationmyself.github.io/img/logo.ico" rel="shortcut icon" type="image/x-icon" />
-        <script type="text/javascript" src="https://educationmyself.github.io/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(e){
-    $('#UserButton').click(function(){
-        $('.hide').fadeIn(1000);		
+    <meta name="keywords" content="test, site, website" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="description" content="Этот сайт является пробным сайтом" />
+    <link href="https://educationmyself.github.io/edumyself/css/style_article.css" rel="stylesheet" type="text/css" />
+    <link href="https://educationmyself.github.io/edumyself/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://educationmyself.github.io/edumyself/js/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
+    <link href="https://educationmyself.github.io/edumyself/img/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="https://educationmyself.github.io/edumyself/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $('#UserButton').click(function() {
+                $('.hide').fadeIn(1000);
+            });
         });
-});
-</script>
-<title>Education myself | 11 советов по защите ПК, работающих на OS Linux/Unix</title>
-<style type="text/css">
-    .Center_content {
-    text-align: center; 
-}
+    </script>
+    <title>Education myself | 11 советов по защите ПК, работающих на OS Linux/Unix</title>
+    <style type="text/css">
+        .Center_content {
+            text-align: center;
+        }
     </style>
-    </head>
-    <body>
-        <div id="page-wrap">
-            <header>
-                    <a href="https://educationmyself.github.io/" title="На главную" id="logo" class="ui-btn-left ui-btn ui-btn-corner-all ui-shadow ui-btn-up-b" data-theme="b"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Educationmyself.github.io</span></span></a>
-                    <a  class="contact ui-btn-left ui-shadow ui-btn-up-b ui-btn-inner ui-btn-corner-all ui-btn-text" href="https://educationmyself.github.io/about.html" title="Информация о нас">О нас</a>
-                    <!--<input type="text" class="field" placeholder="Давай помогу найти" />-->
-                    <a  class="contact ui-btn-left ui-shadow ui-btn-up-b ui-btn-inner ui-btn-corner-all ui-btn-text" href="https://educationmyself.github.io/reg.html" title="Зарегистрироваться">Регистрация</a>
-                        <a class="contact ui-btn-left ui-shadow ui-btn-up-b ui-btn-inner ui-btn-corner-all ui-btn-text" href="https://educationmyself.github.io/auth.html" title="Войти">Вход</a>
-            </header>
-                <div class="clear"><br /></div>
-                <center>
-                    <div id="menu">Разделы<hr /></div>
-                        <div id="menuHrefs">
-                            <a href="https://educationmyself.github.io/about.html">О нас</a>
-                            <a href="https://educationmyself.github.io/feedback.html">Обратная связь</a>
-                            <a href="https://educationmyself.github.io/auth.html">Вход</a>
-                            <a href="https://educationmyself.github.io/reg.html">Регистрация</a>
+</head>
+
+<body>
+    <div id="page-wrap">
+        <header>
+            <a href="https://educationmyself.github.io/edumyself/" title="На главную" id="logo" class="ui-btn-left ui-btn ui-btn-corner-all ui-shadow ui-btn-up-b" data-theme="b"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Educationmyself.github.io</span></span></a>
+            <a class="contact ui-btn-left ui-shadow ui-btn-up-b ui-btn-inner ui-btn-corner-all ui-btn-text" href="https://educationmyself.github.io/edumyself/about.html" title="Информация о нас">О нас</a>
+            <!--<input type="text" class="field" placeholder="Давай помогу найти" />-->
+            <a class="contact ui-btn-left ui-shadow ui-btn-up-b ui-btn-inner ui-btn-corner-all ui-btn-text" href="https://educationmyself.github.io/edumyself/reg.html" title="Зарегистрироваться">Регистрация</a>
+            <a class="contact ui-btn-left ui-shadow ui-btn-up-b ui-btn-inner ui-btn-corner-all ui-btn-text" href="https://educationmyself.github.io/edumyself/auth.html" title="Войти">Вход</a>
+        </header>
+        <div class="clear"><br /></div>
+        <center>
+            <div id="menu">Разделы
+                <hr />
+            </div>
+            <div id="menuHrefs">
+                <a href="https://educationmyself.github.io/edumyself/about.html">О нас</a>
+                <a href="https://educationmyself.github.io/edumyself/feedback.html">Обратная связь</a>
+                <a href="https://educationmyself.github.io/edumyself/auth.html">Вход</a>
+                <a href="https://educationmyself.github.io/edumyself/reg.html">Регистрация</a>
+            </div>
+        </center>
+        <div id="wrapper">
+            <div>
+                <h1>11 советов по защите ПК, работающих на
+                    <h1>OS Linux/Unix</h1>
+                </h1>
+                <p><img src="https://educationmyself.github.io/edumyself/img/linuxSec.jpg" width="599" height="270"></p>
+                <p> Ежедневно обнаруживаются десятки уязвимостей, создаются сотни эксплоитов. Не исключено, что уязвимость может быть найдена и в UNIX-системах, поэтому, вам стоит обезопасить себя от “нежелательного вторжения”, даже если вы периодически обновляете
+                    ОС.</p>
+            </div>
+            <p style="text-align: center">
+                <input name="UserButton" type="submit" id="UserButton" value="Читать далее...">
+                <div class="hide">
+                    <h2>Советы по безопасному пользовательскому админестратированию</h2>
+                    <br />
+                    <h3>1. Защитите терминал</h3>
+                    <p>Вы можете защитить консоль, ограничив права root на использование определённых терминалов. Сделать это можно, указав терминалы, которые будет использовать root в "/etc/securetty".</p>
+                    <p>Предпочтительно (но не обязательно) разрешать root вход только в один терминал, а другие оставлять для прочих пользователей.</p>
+                    <div></div>
+                    <h3>2. Всегда меняйте пароль</h3>
+                    <p>В наши дни просто необходим сильный пароль, но чтобы добавить ещё один слой защиты, следует время от времени его менять.<br />Вы можете забывать о смене пароля, поэтому должно быть что-то, что будет вам напоминать об этом.</p>
+                    <p>Есть два способа добиться этого:
+                        <div id="ul">
+                            <ul>
+                                <li>Использование chage</li>
+                                <li>Установка значений по умолчанию в "/etc/login.defs" </li>
+                            </ul>
                         </div>
-                </center>
-                <div id="wrapper">
-                  <div>
-    <h1>11 советов по защите ПК, работающих на <h1>OS Linux/Unix</h1></h1>
-<p><img src="https://educationmyself.github.io/img/linuxSec.jpg" width="599" height="270"></p>
-    <p>	Ежедневно обнаруживаются десятки уязвимостей, создаются сотни эксплоитов. Не исключено, что уязвимость может быть найдена и в UNIX-системах, поэтому, вам стоит обезопасить себя от “нежелательного вторжения”, даже если вы периодически обновляете ОС.</p>
-  </div><p style="text-align: center" >
-        <input name="UserButton" type="submit" id="UserButton" value="Читать далее...">
-        <div class="hide" >
-    <h2>Советы по безопасному пользовательскому админестратированию</h2>
-    <br />
-    <h3>1. Защитите терминал</h3>
-    <p>Вы можете защитить консоль, ограничив права root на использование определённых терминалов. Сделать это можно, указав терминалы, которые будет использовать root в "/etc/securetty".</p>
-    <p>Предпочтительно (но не обязательно) разрешать root вход только в один терминал, а другие оставлять для прочих пользователей.</p>
-    <div></div>
-    <h3>2. Всегда меняйте пароль</h3>
-    <p>В наши дни просто необходим сильный пароль, но чтобы добавить ещё один слой защиты, следует время от времени его менять.<br />Вы можете забывать о смене пароля, поэтому должно быть что-то, что будет вам напоминать об этом.</p>
-    <p>Есть два способа добиться этого:
-        <div id="ul">
-            <ul>
-                <li>Использование chage</li>
-                <li>Установка значений по умолчанию в "/etc/login.defs" </li>
-            </ul>
-        </div>
-    </p>
-    <p>&nbsp;
-        <textarea name="source code" cols="85" rows="1" id="source code" dir="ltr">1	$ chage -M 20 likegeeks
-        </textarea><p></p>
-    </p>
-    <p>Мы используем параметр -M для установки срока пароля. Вы можете использовать chage без параметров, и тогда система попросит ввести вас значение.</p>
-    <p>Вы также можете перейти в "/etc/login.defs" и поменять значения в соответствии с вашими потребностями.</p>
-    <p>&nbsp;
-        <textarea name="source code" cols="85" rows="5" id="source code" dir="ltr">1    PASS_MAX_DAYS 10
+                    </p>
+                    <p>&nbsp;
+                        <textarea name="source code" cols="85" rows="1" id="source code" dir="ltr">1	$ chage -M 20 likegeeks
+        </textarea>
+                        <p></p>
+                    </p>
+                    <p>Мы используем параметр -M для установки срока пароля. Вы можете использовать chage без параметров, и тогда система попросит ввести вас значение.</p>
+                    <p>Вы также можете перейти в "/etc/login.defs" и поменять значения в соответствии с вашими потребностями.</p>
+                    <p>&nbsp;
+                        <textarea name="source code" cols="85" rows="5" id="source code" dir="ltr">1    PASS_MAX_DAYS 10
 2
 3    PASS_MIN_DAYS 0
 4            
 5    PASS_WARN_AGE 3
-        </textarea><p></p>
-    </p>
-    <p>Имейте в виду, что вам следует заставить других пользователей создавать надёжные пароли, используя <a href="https://likegeeks.com/linux-pam-easy-guide/#pam-cracklib-module" target="_blank" rel="noopener noreferrer">pam_cracklib</a>.</p>
-    <p>Как только вы его установите, перейдите в "/etc/pam.d/system-auth" и введите что-то вроде этого:</p>
-    <p>&nbsp;
-        <textarea name="source code" cols="85" rows="1" id="source code" dir="ltr">1    password required pam_cracklib.so minlen=12 lcredit=-1 ucredit=-1 dcredit=-2 ocredit=-1
-        </textarea><p></p>
-    </p>
-    <h3>Оповещения sudo</h3>
-    <p>sudo-команды значительно облегчают жизнь, однако могут привести к проблемам безопасности Linux, которые могут испортить вам жизнь.</p>
-<p>Все конфигурации sudo лежат в /etc/sudoers.</p>
-<p>Вы можете запретить пользователям выполнять команды как root. Вы можете сделать так, чтобы во время использования sudo, приходило письмо с оповещением на почту. Добавьте эти строки в конец файла:</p>
-<p>&nbsp;
-    <textarea name="source code" cols="85" rows="4" id="source code" dir="ltr">1
+        </textarea>
+                        <p></p>
+                    </p>
+                    <p>Имейте в виду, что вам следует заставить других пользователей создавать надёжные пароли, используя <a href="https://likegeeks.com/linux-pam-easy-guide/#pam-cracklib-module" target="_blank" rel="noopener noreferrer">pam_cracklib</a>.</p>
+                    <p>Как только вы его установите, перейдите в "/etc/pam.d/system-auth" и введите что-то вроде этого:</p>
+                    <p>&nbsp;
+                        <textarea name="source code" cols="85" rows="1" id="source code" dir="ltr">1    password required pam_cracklib.so minlen=12 lcredit=-1 ucredit=-1 dcredit=-2 ocredit=-1
+        </textarea>
+                        <p></p>
+                    </p>
+                    <h3>Оповещения sudo</h3>
+                    <p>sudo-команды значительно облегчают жизнь, однако могут привести к проблемам безопасности Linux, которые могут испортить вам жизнь.</p>
+                    <p>Все конфигурации sudo лежат в /etc/sudoers.</p>
+                    <p>Вы можете запретить пользователям выполнять команды как root. Вы можете сделать так, чтобы во время использования sudo, приходило письмо с оповещением на почту. Добавьте эти строки в конец файла:</p>
+                    <p>&nbsp;
+                        <textarea name="source code" cols="85" rows="4" id="source code" dir="ltr">1
 2
 mailto yourname@yourdomain.com
 mail_always on
-    </textarea><p></p>
-</p>
-Защита системы: SSH
-Если мы говорим о Linux, то стоит упомянуть SSH. SSH — это протокол прикладного уровня, позволяющий удалённо управлять операционной системой. Это очень важная вещь, и если вы используете SSH, необходимы хотя бы минимальные настройки безопасности.
-Файл конфигурации лежит в /etc/ssh/sshd_config.
-Сканнеры или боты, которые будет использовать атакующий, прежде всего попытаются подключиться к дефолтному порту 22, который указан в конфигурации. Вы можете поменять порт в файле:
+    </textarea>
+                        <p></p>
+                    </p>
+                    Защита системы: SSH Если мы говорим о Linux, то стоит упомянуть SSH. SSH — это протокол прикладного уровня, позволяющий удалённо управлять операционной системой. Это очень важная вещь, и если вы используете SSH, необходимы хотя бы минимальные настройки
+                    безопасности. Файл конфигурации лежит в /etc/ssh/sshd_config. Сканнеры или боты, которые будет использовать атакующий, прежде всего попытаются подключиться к дефолтному порту 22, который указан в конфигурации. Вы можете поменять порт
+                    в файле: 1 Port 5555 Вы также можете запретить вход с root’а: обновите значение PermitRootLogin, поставив ‘no’ 1 PermitRootLogin no И, конечно же, замените обычный пароль на открытый и закрытый ключи: 1 2 3 PasswordAuthentication no
+                    PermitEmptyPasswords no Что касается тайм-аутов SSH, эта распространённая проблема может быть решена путём настройки перечисленных ниже параметров. Например, следующие настройки подразумевают, что пакет будет отправляться каждые 60
+                    секунд: 1 2 3 4 5 ServerAliveInterval 15 ServerAliveCountMax 3 TCPKeepAlive yes Регулируя эти значения, вы можете обеспечить более продолжительное соединение. 1 2 3 ClientAliveInterval 30 ClientAliveCountMax 5 Вы также можете указать
+                    пользователей или группы, которым разрешено пользоваться SSH: 1 2 3 AllowUsers user1 user2 AllowGroup group1 group2 Защита системы: SSH + Google Authenticator Кроме указанного способа вы также можете использовать двухфакторную аутентификацию
+                    для SSH, например Google Authenticator. 1 $ yum install google-authenticator Далее запустите, чтобы установить. 1 $ google-authenticator На вашем телефоне должно быть установлено приложение Google Authenticator. Отредактируйте файл
+                    /etc/pam.d/sshd, добавив следующую строку: 1 auth required pam_google_authenticator.so Последнее, что необходимо сделать – сообщить SSH об установленном аутентификаторе, добавив следующую строку в /etc/ssh/sshd_config: 1 ChallengeResponseAuthentication
+                    yes Теперь перезапустите SSH. 1 $ systemctl restart sshd Теперь, когда вы будете входить в систему, используя SSH, вас попросят ввести код подтверждения. Ваш SSH стал более защищённым и надёжным. Защита системы посредством обнаружения
+                    вторжений с помощью Tripwire (мониторинг файловой системы) Tripwire – один из лучших инструментов для обеспечения безопасности Linux. Это система обнаружения вторжений (HIDS). Задача Tripwire – мониторинг файловой системы и фиксирование
+                    изменений файлов. Для того, чтобы установить Tripwire, нужен доступ к репозиторию EPEL. 1 2 wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
+                    <span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-v">rpm</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-e">ivh </span><span class="crayon-v">epel</span>
+                    <span
+                        class="crayon-o">-</span><span class="crayon-v">release</span><span class="crayon-o">-</span><span class="crayon-cn">7</span><span class="crayon-o">-</span><span class="crayon-cn">9.noarch.rpm</span> Как только вы установили EPEL, можете установить
+                        Tripwire: 1 $ sudo yum install tripwire Во-первых, создайте ключевые файлы: 1 $ tripwire-setup-keyfiles Вам будет предложено ввести парольную фразу для этих файлов. Используйте сильный пароль. Теперь вы можете настроить Tripwire,
+                        отредактировав файл /etc/tripwire/twpol.txt. Файл очень легко редактировать, потому что каждая строка имеет пояснения в виде комментариев. Как только закончите, инициализируйте Tripwire: 1 $ tripwire --init Процесс сканирования
+                        займёт некоторое время, это зависит от размера и количества хранящихся файлов. Любые изменения в файловой системе считаются вторжением. Администратор будет уведомлён, затем ему нужно будет восстановить систему с файлами, которым
+                        можно доверять. По этой причине любые системы должны проверяться через Tripwire. Для этого используйте следующую команду: 1 $ tripwire --check Последнее, что касается Tripwire, я бы порекомендовал вам защитить файлы twpol.txt и
+                        twcfg.txt для создания ещё одного слоя безопасности. У Tripwire очень много опций и настроек, вы можете посмотреть их с помощью man tripwire. Защита системы с помощью Firewalld(CentOS) Firewalld является заменой iptables, он улучшает
+                        управление безопасностью Linux. Программа может изменить конфигурацию, не останавливая текущие подключения. Firewalld работает как служба, позволяющая добавлять и немедленно изменять правила и использующая сетевые зоны. Чтобы узнать,
+                        запущен ли Firewalld, введите следующую команду: 1 $ firewall-cmd --state Вы можете вывести предопределенные зоны вот так: 1 $ firewall-cmd --get-zones Каждая из этих зон имеет “уровень доверия”. Значение может быть обновлено так:
+                        1 $ firewall-cmd --set-default-zone=
+                        <new-name>
+                            Вы можете получить всю информацию о конкретной зоне следующим образом: 1 $ firewall-cmd --zone=
+                            <zone-name> --list-all Также вы можете вывести все поддерживаемые службы: 1 $ firewall-cmd --get-services Затем вы можете включить в список дополнительные службы или удалить конкретные: 1 2 3 $ firewall-cmd --zone=
+                                <zone-name> --add-service=
+                                    <service-name>
 
-1
-Port 5555
-Вы также можете запретить вход с root’а: обновите значение PermitRootLogin, поставив ‘no’
+                                        $ firewall-cmd --zone=
+                                        <zone-name> --remove-service=
+                                            <service-name>
+                                                Вывести открытые порты для конкретной зоны: 1 $ firewall-cmd --zone=
+                                                <zone-name> --list-ports Удалить или добавить порты в зону: 1 2 3 $ firewall-cmd --zone=
+                                                    <zone-name> --add-port=
+                                                        <port-number/protocol>
 
-1
-PermitRootLogin no
-И, конечно же, замените обычный пароль на открытый и закрытый ключи:
+                                                            $ firewall-cmd --zone=
+                                                            <zone-name> --remove-port=
+                                                                <port-number/protocol>
+                                                                    Добавить или удалить переброску портов для зоны: 1 2 3 $ firewall-cmd --zone=
+                                                                    <zone-name> --add-forward-port=
+                                                                        <port-number>
 
-1
-2
-3
-PasswordAuthentication no
- 
-PermitEmptyPasswords no
-Что касается тайм-аутов SSH, эта распространённая проблема может быть решена путём настройки перечисленных ниже параметров.
-Например, следующие настройки подразумевают, что пакет будет отправляться каждые 60 секунд:
-
-1
-2
-3
-4
-5
-ServerAliveInterval 15
- 
-ServerAliveCountMax 3
- 
-TCPKeepAlive yes
-Регулируя эти значения, вы можете обеспечить более продолжительное соединение.
-
-1
-2
-3
-ClientAliveInterval 30
- 
-ClientAliveCountMax 5
-Вы также можете указать пользователей или группы, которым разрешено пользоваться SSH:
-
-1
-2
-3
-AllowUsers user1 user2
- 
-AllowGroup group1 group2
-Защита системы: SSH + Google Authenticator
-Кроме указанного способа вы также можете использовать двухфакторную аутентификацию для SSH, например Google Authenticator.
-
-1
-$  yum install google-authenticator
-Далее запустите, чтобы установить.
-
-1
-$ google-authenticator
-На вашем телефоне должно быть установлено приложение Google Authenticator. Отредактируйте файл /etc/pam.d/sshd, добавив следующую строку:
-
-1
-auth required pam_google_authenticator.so
-Последнее, что необходимо сделать – сообщить SSH об установленном аутентификаторе, добавив следующую строку в /etc/ssh/sshd_config:
-
-1
-ChallengeResponseAuthentication yes
-Теперь перезапустите SSH.
-
-1
-$ systemctl restart sshd
-Теперь, когда вы будете входить в систему, используя SSH, вас попросят ввести код подтверждения. Ваш SSH стал более защищённым и надёжным.
-Защита системы посредством обнаружения вторжений с помощью Tripwire (мониторинг файловой системы)
-Tripwire – один из лучших инструментов для обеспечения безопасности Linux. Это система обнаружения вторжений (HIDS). Задача Tripwire – мониторинг файловой системы и фиксирование изменений файлов.
-Для того, чтобы установить Tripwire, нужен доступ к репозиторию EPEL.
-
-1
-2
-wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
-<span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-v">rpm</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-e">ivh </span><span class="crayon-v">epel</span><span class="crayon-o">-</span><span class="crayon-v">release</span><span class="crayon-o">-</span><span class="crayon-cn">7</span><span class="crayon-o">-</span><span class="crayon-cn">9.noarch.rpm</span>
-Как только вы установили EPEL, можете установить Tripwire:
-
-1
-$ sudo yum install tripwire
-Во-первых, создайте ключевые файлы:
-
-1
-$ tripwire-setup-keyfiles
-Вам будет предложено ввести парольную фразу для этих файлов. Используйте сильный пароль.
-Теперь вы можете настроить Tripwire, отредактировав файл /etc/tripwire/twpol.txt. Файл очень легко редактировать, потому что каждая строка имеет пояснения в виде комментариев.
-Как только закончите, инициализируйте Tripwire:
-
-1
-$ tripwire --init
-Процесс сканирования займёт некоторое время, это зависит от размера и количества хранящихся файлов. Любые изменения в файловой системе считаются вторжением. Администратор будет уведомлён, затем ему нужно будет восстановить систему с файлами, которым можно доверять.
-По этой причине любые системы должны проверяться через Tripwire. Для этого используйте следующую команду:
-
-1
-$ tripwire --check
-Последнее, что касается Tripwire, я бы порекомендовал вам защитить файлы twpol.txt и twcfg.txt для создания ещё одного слоя безопасности. У Tripwire очень много опций и настроек, вы можете посмотреть их с помощью man tripwire.
-Защита системы с помощью Firewalld(CentOS)
-Firewalld является заменой iptables, он улучшает управление безопасностью Linux. Программа может изменить конфигурацию, не останавливая текущие подключения. Firewalld работает как служба, позволяющая добавлять и немедленно изменять правила и использующая сетевые зоны.
-Чтобы узнать, запущен ли Firewalld, введите следующую команду:
-
-1
-$ firewall-cmd --state
-
-Вы можете вывести предопределенные зоны вот так:
-
-1
-$ firewall-cmd --get-zones
-
-Каждая из этих зон имеет “уровень доверия”. Значение может быть обновлено так:
-
-1
-$ firewall-cmd --set-default-zone=<new-name>
-Вы можете получить всю информацию о конкретной зоне следующим образом:
-
-1
-$ firewall-cmd --zone=<zone-name> --list-all
-Также вы можете вывести все поддерживаемые службы:
-
-1
-$ firewall-cmd --get-services
-
-Затем вы можете включить в список дополнительные службы или удалить конкретные:
-
-1
-2
-3
-$ firewall-cmd --zone=<zone-name> --add-service=<service-name>
- 
-$ firewall-cmd --zone=<zone-name> --remove-service=<service-name>
-Вывести открытые порты для конкретной зоны:
-
-1
-$ firewall-cmd --zone=<zone-name> --list-ports
-Удалить или добавить порты в зону:
-
-1
-2
-3
-$ firewall-cmd --zone=<zone-name> --add-port=<port-number/protocol>
- 
-$ firewall-cmd --zone=<zone-name> --remove-port=<port-number/protocol>
-Добавить или удалить переброску портов для зоны:
-
-1
-2
-3
-$ firewall-cmd --zone=<zone-name> --add-forward-port=<port-number>
- 
-$ firewall-cmd --zone=<zone-name> --remove-forward-port=<port-number>
-Самое лучшее свойство Firewalld заключается в том, что вы можете управлять архитектурой брандмауэра без перезапуска или остановки конкретных служб, в отличие от iptables, где нужно перезагрузить или перезапустить службу.
-Возвращаемся к Iptables
-Некоторые люди предпочитают iptables firewall Firewalld’у, вы можете с лёгкостью вернуться к iptables, если раньше использовали Firewalld.
-Первым делом, отключите Firewalld:
-
-1
-2
-3
-$ systemctl disable firewalld
- 
-$ systemctl stop firewalld
-Установите iptables:
-
-1
-2
-3
-4
-5
-$ yum install iptables-services
- 
-$ touch /etc/sysconfig/iptables
- 
-$ touch /etc/sysconfig/ip6tables
-Теперь запустите:
-
-1
-2
-3
-4
-5
-6
-7
-$ systemctl start iptables
- 
-$ systemctl start ip6tables
- 
-$ systemctl enable iptables
- 
-$ systemctl enable ip6tables
-В конце перезагрузите систему.
-Неизменяемые файлы (запрет на модификацию файла)
-В неизменяемые файлы не может внести изменения никакой пользователь, даже root. Он не может изменить их или удалить, пока не удалит неизменяемый бит. Только root может сделать это. Можно сказать, что эта функция защищает вас как root от любых ошибок, которые могут повредить вашу систему.
-Вы можете защитить любой файл, который захотите. Используем команду chattr.
-
-1
-$ chattr +i /myscript
-
-Неизменяемость файла можно убрать:
-
-1
-$ chattr -i /myscript
-
-Управление SELinux с помощью aureport
-Отключённый SELinux – обычная вещь, если вы используете хостинговые панели управления.
-Отключение SELinux оставляет систему незащищённой. Нельзя не согласиться с тем, что SELinux имеет определённые сложности, однако вы можете упростить себе жизнь, используя aureport.
-Утилита aureport разработана для создания табличных отчётов для логов аудита.
-
-1
-$ aureport --avc
-
-Вы можете создать список исполняемых файлов:
-
-1
-$ aureport -x
- Кроме того, aureport можно применять для генерации полного отчёта об аутентификациях.
-
-1
-$ aureport -au -i
-
-Также вы можете вывести список неудачных попыток аутентификации:
-
-1
-$ aureport -au --summary -i --failed
-
-Или, может быть, итог успешных аутентификаций:
-
-Используем sealert
-В добавок к aureport, вы можете использовать инструмент sealer. Установка:
-
-1
-$ yum install setools
-Теперь у нас есть инструмент, возвращающий объявления из файла /var/log/audit/audit.log и дающий нам понять о проблемах SELinux, если таковые возникают.
-Вы можете использовать это примерно так:
-
-1
-$ sealert -a /var/log/audit/audit.log
-
-Лучше всего в генерируемых отчётах то, что, если обнаружена проблема, вы с лёгкостью сможете найти способ её решения.
-    <h2>Заключение</h2>
-    <p> Данные шесть практик, которые мы обсудили сегодня, возможно, не те, которые имеют наибольшее влияние или самые значительные результаты. Тем не менее, они относятся к числу наиболее часто упоминаемых опытными разработчиками.  </p>
-    <p>Автор статьи: Александр Давыдов</p>
-    <p>  <a href="https://proglib.io/p/tips-on-writing-clean-code/">Сслылка на оригинальную статью</a></p>
-  </div></p>
-    </div>
-            <footer>
-                <span class="left">
+                                                                            $ firewall-cmd --zone=
+                                                                            <zone-name> --remove-forward-port=
+                                                                                <port-number>
+                                                                                    Самое лучшее свойство Firewalld заключается в том, что вы можете управлять архитектурой брандмауэра без перезапуска или остановки конкретных служб, в отличие от iptables, где нужно перезагрузить или перезапустить службу. Возвращаемся к Iptables Некоторые
+                                                                                    люди предпочитают iptables firewall Firewalld’у, вы можете с лёгкостью вернуться к iptables, если раньше использовали Firewalld. Первым делом, отключите Firewalld: 1 2
+                                                                                    3 $ systemctl disable firewalld $ systemctl stop firewalld Установите iptables: 1 2 3 4 5 $ yum install iptables-services $ touch /etc/sysconfig/iptables $ touch /etc/sysconfig/ip6tables
+                                                                                    Теперь запустите: 1 2 3 4 5 6 7 $ systemctl start iptables $ systemctl start ip6tables $ systemctl enable iptables $ systemctl enable ip6tables В конце перезагрузите систему.
+                                                                                    Неизменяемые файлы (запрет на модификацию файла) В неизменяемые файлы не может внести изменения никакой пользователь, даже root. Он не может изменить их или удалить, пока
+                                                                                    не удалит неизменяемый бит. Только root может сделать это. Можно сказать, что эта функция защищает вас как root от любых ошибок, которые могут повредить вашу систему.
+                                                                                    Вы можете защитить любой файл, который захотите. Используем команду chattr. 1 $ chattr +i /myscript Неизменяемость файла можно убрать: 1 $ chattr -i /myscript Управление
+                                                                                    SELinux с помощью aureport Отключённый SELinux – обычная вещь, если вы используете хостинговые панели управления. Отключение SELinux оставляет систему незащищённой. Нельзя
+                                                                                    не согласиться с тем, что SELinux имеет определённые сложности, однако вы можете упростить себе жизнь, используя aureport. Утилита aureport разработана для создания табличных
+                                                                                    отчётов для логов аудита. 1 $ aureport --avc Вы можете создать список исполняемых файлов: 1 $ aureport -x Кроме того, aureport можно применять для генерации полного отчёта
+                                                                                    об аутентификациях. 1 $ aureport -au -i Также вы можете вывести список неудачных попыток аутентификации: 1 $ aureport -au --summary -i --failed Или, может быть, итог успешных
+                                                                                    аутентификаций: Используем sealert В добавок к aureport, вы можете использовать инструмент sealer. Установка: 1 $ yum install setools Теперь у нас есть инструмент, возвращающий
+                                                                                    объявления из файла /var/log/audit/audit.log и дающий нам понять о проблемах SELinux, если таковые возникают. Вы можете использовать это примерно так: 1 $ sealert -a /var/log/audit/audit.log
+                                                                                    Лучше всего в генерируемых отчётах то, что, если обнаружена проблема, вы с лёгкостью сможете найти способ её решения.
+                                                                                    <h2>Заключение</h2>
+                                                                                    <p> Данные шесть практик, которые мы обсудили сегодня, возможно, не те, которые имеют наибольшее влияние или самые значительные результаты. Тем не менее, они относятся к числу
+                                                                                        наиболее часто упоминаемых опытными разработчиками. </p>
+                                                                                    <p>Автор статьи: Александр Давыдов</p>
+                                                                                    <p> <a href="https://proglib.io/p/tips-on-writing-clean-code/">Сслылка на оригинальную статью</a></p>
+                </div>
+            </p>
+        </div>
+        <footer>
+            <span class="left">
                     Все права защищены &copy; 2017-2018
                 </span><span class="right">
-                        <a href="https://vk.com/educationmyself" title="Education myself"><img src="https://educationmyself.github.io/img/VK.png" alt="Группа Вконтакте" title="Группа Вконтакте" /></a><div>Группа Вконтакте</div>
+                        <a href="https://vk.com/educationmyself/edumyself/" title="Education myself"><img src="https://educationmyself.github.io/edumyself/img/VK.png" alt="Группа Вконтакте" title="Группа Вконтакте" /></a><div>Группа Вконтакте</div>
                     </span>
-            </footer>
-    </body>
+        </footer>
+</body>
+
 </html>
